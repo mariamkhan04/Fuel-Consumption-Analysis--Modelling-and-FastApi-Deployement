@@ -1,11 +1,14 @@
-# **Fuel Consumption Prediction: Data Analysis, ML Modeling & API Deployment with FastAPI**
+# **Fuel Consumption Prediction: Data Analysis, ML Modeling & API Development with FastAPI**
 
 ## **Overview**
 
-This project focuses on **analyzing vehicle fuel consumption and deploying a predictive model using FastAPI**. The dataset used contains information on vehicles manufactured in the year 2000, including attributes such as engine size, cylinder count, CO₂ emissions, and fuel consumption. Due to the dataset's historical nature, the fuel efficiency trends may differ from modern vehicles.
+This project focuses on **analyzing vehicle fuel consumption and developing a predictive model using FastAPI**. The dataset used contains information on vehicles manufactured in the year 2000, including attributes such as **engine size, cylinder count, CO₂ emissions, and fuel consumption**. Due to the dataset's historical nature, the fuel efficiency trends may differ from modern vehicles.
 
 A **Linear Regression model** has been trained to predict fuel consumption (L/100 km) based on vehicle parameters. The model has been evaluated using metrics like **Mean Absolute Error (MAE)** and **R² Score**, ensuring reliable predictions.
 
+The trained model is served as a **REST API using FastAPI**, deployed locally on a development server using Uvicorn. The project also includes a **frontend interface** that allows users to input vehicle parameters and receive fuel consumption predictions in real time.
+
+![alt text](image.png)
 
 ## **Project Structure**
 
