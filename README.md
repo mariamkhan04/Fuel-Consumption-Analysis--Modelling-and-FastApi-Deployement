@@ -8,7 +8,7 @@ A **Linear Regression model** has been trained to predict fuel consumption (L/10
 
 The trained model is served as a **REST API using FastAPI**, deployed locally on a development server using Uvicorn. The project also includes a **frontend interface** that allows users to input vehicle parameters and receive fuel consumption predictions in real time.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## **Project Structure**
 
