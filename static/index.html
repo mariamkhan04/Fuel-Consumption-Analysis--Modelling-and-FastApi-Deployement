@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuel Consumption Prediction</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h1>Welcome to the Fuel Consumption Prediction API</h1>
-    <form action="/predict/" method="post">
-        <label for="input1">Input 1 (Starting from 1.0):</label>
-        <input type="number" id="input1" name="input1" value="1.0" min="1.0" step="0.01" required><br>
-        
-        <label for="input2">Input 2 (Starting from 1):</label>
-        <input type="number" id="input2" name="input2" value="3" min="3" required><br>
+    <h1>Fuel Consumption Predictor - Get Instant Estimates!</h1>
+    <div class="container">
+        <form id="predictForm">
+            <label for="input1">Engine Size (Liters) (Min: 1.0, Max: 8.0):</label>
+            <input type="number" id="input1" name="input1" value="1.0" min="1.0" max="8.0" step="0.01" required><br>
 
-        <label for="input3">Input 3 (Starting from 100):</label>
-        <input type="number" id="input3" name="input3" value="100" min="100" required><br>
+            <label for="input2">Number of Cylinders (Min: 3, Max: 12):</label>
+            <input type="number" id="input2" name="input2" value="3" min="3" max="12" required><br>
 
-        <button type="submit">Predict</button>
-    </form>
+            <label for="input3">CO<sub>2</sub> Emissions (g/km) (Min: 104, Max: 582):</label>
+            <input type="number" id="input3" name="input3" value="104" min="104" max="582" required><br>
+            <button type="submit">Predict</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <script src="/static/script.js"></script>
 </body>
 </html>
