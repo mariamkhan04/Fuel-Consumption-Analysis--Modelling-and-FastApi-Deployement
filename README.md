@@ -6,7 +6,6 @@ This project focuses on **analyzing vehicle fuel consumption and deploying a pre
 
 A **Linear Regression model** has been trained to predict fuel consumption (L/100 km) based on vehicle parameters. The model has been evaluated using metrics like **Mean Absolute Error (MAE)** and **R² Score**, ensuring reliable predictions.
 
-<hr>
 
 ## **Project Structure**
 
@@ -34,7 +33,6 @@ A **Linear Regression model** has been trained to predict fuel consumption (L/10
 
 [static/script.js](static/script.js): Handles API calls and updates UI with predictions.
 
-<hr>
 
 ## **Installation & Setup**
 
@@ -59,7 +57,6 @@ uvicorn app:app --reload
 
 The API will be available at http://127.0.0.1:8000/
 
-<hr>
 
 ## **Usage**
 
@@ -69,7 +66,6 @@ The API will be available at http://127.0.0.1:8000/
 
 **POST** ```/predict```: Takes vehicle parameters as input (engine size, cylinders, CO₂ emissions) and returns predicted fuel consumption.
 
-<hr>
 
 ## **Frontend Interaction**
 
@@ -79,7 +75,6 @@ The API will be available at http://127.0.0.1:8000/
 
 3. View the predicted fuel consumption displayed on the webpage.
 
-<hr>
 
 ## Author
 
